@@ -1,17 +1,17 @@
 import React, { useState } from 'react';
 import Navbar from './NavBar';
 import Footer from './Footer';
-import AboutME from './pages/AboutMe';
+import About from './pages/About';
 import Portfolio from './pages/Portfolio';
 import Contact from './pages/Contact';
 import Resume from './pages/Resume';
 
-export default function PortfolioContainer() {
-  const [currentPage, setCurrentPage] = useState('AboutMe');
+export default function MainConatiner() {
+  const [currentPage, setCurrentPage] = useState('About');
 
   const renderPage = () => {
-    if (currentPage === 'AboutMe') {
-      return <AboutME />;
+    if (currentPage === 'About') {
+      return <About />;
     }
     if (currentPage === 'Portfolio') {
       return <Portfolio />;
