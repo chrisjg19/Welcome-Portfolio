@@ -1,40 +1,28 @@
-import React, { useState } from 'react';
-import Navbar from './NavBar';
-import Footer from './Footer';
+import React from 'react';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import Navbar from '../components/Navbar';
+//import Header from '../components/Header';
+import Footer from '../components/Footer';
 import About from '../pages/About';
-import Portfolio from '../pages/Portfolio';
 import Contact from '../pages/Contact';
+import Portfolio from '../pages/Portfolio';
 import Resume from '../pages/Resume';
 
-export default function MainConatiner() {
-  const [currentPage, setCurrentPage] = useState('About');
-
-  const renderPage = () => {
-    if (currentPage === 'About') {
-      return <About />;
-    }
-    if (currentPage === 'Portfolio') {
-      return <Portfolio />;
-    }
-    if (currentPage === 'Contact') {
-      return <Contact />;
-    }
-    if (currentPage === 'Resume') {
-      return <Resume />;
-    }
-  };
-
-  const handlePageChange = (page) => setCurrentPage(page);
-
+function MainContainer() {
   return (
-    <>
-    <div className="App">
-      <div className="header">
-        <Navbar currentPage={currentPage} handlePageChange={handlePageChange} />
+    <Router>
+      <div>
+        <Navbar />
+        <Routes>
+          <Route exact path="/" element={<About/>} />
+          <Route path="/contact" element={<Contact/>} />
+          <Route path="/portfolio" element={<Portfolio/>} />
+          <Route path="/resume" element={<Resume/>} />
+        </Routes>
+        <Footer />
       </div>
-      {renderPage()}
-    </div>
-    <Footer />
-    </>
+    </Router>
   );
-};
+}
+
+export default MainContainer;
