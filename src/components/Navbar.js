@@ -1,36 +1,36 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
+import Container from 'react-bootstrap/Container';
+import Nav from 'react-bootstrap/Nav';
+import Navbar from 'react-bootstrap/Navbar';
 
 
 
-const Navbar = () => {
+const Navigation = () => {
   const [click] = useState(false);
 
 
-  const [color] = useState(false);
-
-
   return (
-    <div className={color ? "header header-bg" : "header"}>
-      
-        <h1>Christopher Gonzalez</h1>
-       <ul className={click ? "nav-menu active" : "nav-menu"}>
-        <li>
-          <Link to="/">About</Link>
-        </li>
-        <li>
-          <Link to="/project">Project</Link>
-        </li>
-        <li>
-          <Link to="/resume">Resume</Link>
-        </li>
-        <li>
-          <Link to="/contact">Contact</Link>
-        </li>
-      </ul>
-   
-    </div>
+    <Navbar >
+      <Container>
+        <Navbar.Brand href="/">Christopher Gonzalez</Navbar.Brand>
+       <Nav className="justify-content-end">
+        
+          <Nav.Link href="/">About</Nav.Link>
+        
+        
+          <Nav.Link href="/portfolio">Project</Nav.Link>
+        
+        
+          <Nav.Link href="/resume">Resume</Nav.Link>
+        
+        
+          <Nav.Link href="/contact">Contact</Nav.Link>
+        
+      </Nav>
+      </Container>
+    </Navbar>
   );
 };
 
-export default Navbar;
+export default Navigation;
