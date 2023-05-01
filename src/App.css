@@ -73,7 +73,7 @@ form input, form textarea{
   color: #0a0303;
 }
 
-.page-container, .container {
+.page-container {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -108,4 +108,43 @@ form input, form textarea{
   background-color: #333;
   color: #fff;
 }
+.project-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+  max-width: 960px;
+}
 
+.project-card {
+  width: 300px;
+  margin: 1rem;
+  padding: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+.project-card img {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 1rem;
+}
+
+.project-card h3 {
+  margin-top: 0;
+}
+
+.project-card p {
+  margin-bottom: 1rem;
+}
+
+.project-card a {
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+.project-card a:last-child {
+  margin-bottom: 0;
+}
