@@ -3,6 +3,7 @@ import React from "react";
 const About = () => {
     return (
         <div className="page-container">
+            <img src="src\imgs\me.jpeg" alt="Me" />
             <h2 className="hello">Hello Im Chris, Welcome to my World!</h2>
             <p>I am a early junior web develoer from Houston,TX. It can get pretty hot here, which is the perfect excuse for me to stay home and work on my coding skills.</p>
             <p>Coding is new to me but I have always been one to push myself to learn something and to get good at it, as well as I have always had an interest on how the web and tech works.</p>
