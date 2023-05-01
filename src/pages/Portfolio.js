@@ -6,7 +6,7 @@ import Proj004 from '../imgs/JSpasswordgen.png'
 import Proj005 from '../imgs/miniMDB.png'
 import Proj006 from '../imgs/notetaker.png'
 import Proj007 from '../imgs/pwatexteditor.png'
-import Proj008 from '../imgs/quiz.png'
+import Proj008 from '../imgs/quiz.PNG'
 import Proj009 from '../imgs/WorkDayScheduler.png'
 
 const Portfolio = () => {
