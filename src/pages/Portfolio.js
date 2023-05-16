@@ -83,6 +83,14 @@ const Portfolio = () => {
         link: 'https://quizmax.herokuapp.com/login',
         github: 'https://github.com/chrisjg19/QuizMasterMax5000'
       },
+      {
+        id: 10,
+        title: "Classic Games",
+        image: Proj010,
+        description: "Enjoy all these retro Games!",
+        link: 'https://dashboard.heroku.com/apps/proj3ct-3-empty-group1',
+        github: 'https://github.com/LemonDropping/project-3'
+      },
   ];
 
   return (
