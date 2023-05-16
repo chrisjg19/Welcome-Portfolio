@@ -8,6 +8,7 @@ import Proj006 from '../imgs/notetaker.png'
 import Proj007 from '../imgs/pwatexteditor.png'
 import Proj008 from '../imgs/quiz.PNG'
 import Proj009 from '../imgs/WorkDayScheduler.png'
+import Proj010 from '../imgs/lastProject.png'
 
 const Portfolio = () => {
   const projects = [
